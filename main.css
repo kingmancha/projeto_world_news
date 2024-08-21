@@ -4,9 +4,21 @@ body {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 header {
-    background-color: rgb(25, 32, 37);
-    padding: 10px 0;
+    background-color: #1a237e;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #fff;
 }
 
 
@@ -26,21 +38,26 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-size: 16px;
 }
 
 nav ul li input[type="text"] {
-    padding: 5px;
+    padding: 3px;
     font-size: 14px;
+    width: 150px;
     margin-right: 5px;
 }
 
 nav ul li button {
-    padding: 6px 10px;
+    padding: 4px 8px;
     font-size: 14px;
     cursor: pointer;
+    background-color: #add8e6;
+    border: none;
+    border-radius: 4px;
+    color: #1a237e;
 }
 
 section {
@@ -54,7 +71,7 @@ section {
     flex-wrap: wrap;
 }
 
-.noticia-item { 
+.noticia-item {
     width: 30%;
     margin: 15px 0;
     text-align: center;
@@ -76,25 +93,61 @@ section {
     font-size: 14px;
 }
 
+.noticias-destque{ 
+    position: absolute;
+    top: 550px;
+    right: 20px;
+    width: 300px;
+    height: auto;
+    background-color: #1a237e;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #fff;
+    overflow: auto;
+}
+
+.noticias-destque h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.noticias-destaque .noticias-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.noticias-destaque .noticia-item {
+    text-align: center;
+}
+
+.noticias-destaque .noticia-item h3 {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.noticias-destaque .noticia-item p {
+    font-size: 14px;
+}
+
+
+
 .noticias-mundo {
-    background-color: #c4ca6d ;
+    background-color: #d1d1d1;
 }
 
 .esportes {
-    background-color: #add8e6;
+    background-color: #adadad;
 }
 
 .clima {
-    background-color: #90ee90;
+    background-color: #888888;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background-color: #1a237e;
+    color: #fff;
 }
-
