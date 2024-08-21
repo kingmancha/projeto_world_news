@@ -1,13 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", system-ui;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: rgb(8, 87, 161);
+    background-color: rgb(25, 32, 37);
     padding: 10px 0;
 }
+
 
 nav ul {
     list-style: none;
@@ -76,5 +77,24 @@ section {
 }
 
 .noticias-mundo {
-    background-color: rgb(180, 171, 171);
+    background-color: #c4ca6d ;
 }
+
+.esportes {
+    background-color: #add8e6;
+}
+
+.clima {
+    background-color: #90ee90;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
